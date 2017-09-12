@@ -31,6 +31,7 @@ public class Fragment1 extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         int buttonIndex = transleteIdindex(v.getId());
+
         OnSelectButtonListern listern = (OnSelectButtonListern) getActivity();
         listern.onButtonSelected(buttonIndex);
 
@@ -60,6 +61,8 @@ public class Fragment1 extends Fragment implements View.OnClickListener {
     public interface OnSelectButtonListern {
         void onButtonSelected(int buttonIndex);
     }
+
+
 
 
 
